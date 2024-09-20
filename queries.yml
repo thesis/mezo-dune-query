@@ -1,2 +1,4 @@
 query_ids:
-  - 123456
+  - 3612399 # Daily TVL Change
+  - 3842151 # Daily Deposits Breakdown Split BTC/tBTC/wBTC v3.1
+  - 3841847 # BTC Backed Stables Deposits

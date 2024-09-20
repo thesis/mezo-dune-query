@@ -1,9 +1,9 @@
-import os
-import yaml
-from dune_client.client import DuneClient
-from dotenv import load_dotenv
 import sys
 import codecs
+import os
+from dotenv import load_dotenv
+import yaml
+from dune_client.client import DuneClient
 
 # Set the default encoding to UTF-8
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
@@ -55,6 +55,3 @@ for id in query_ids:
             with open(file_path, 'w', encoding='utf-8') as file:
                 file.write(f'-- part of a query repo\n-- query name: {query.base.name}\n-- query link: https://dune.com/queries/{query.base.query_id}\n\n\n{query.sql}')
         print('CREATE: new query file: {}'.format(new_file))
-
-            
-
